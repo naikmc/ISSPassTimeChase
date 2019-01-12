@@ -119,6 +119,17 @@ public class DetailFragment extends Fragment {
             }
         });
 
+        showPassTime.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getFragmentManager()
+                        .beginTransaction()
+                        .add(R.id.fragment,  ListFragment.instance(detailViewModel.getLat().getValue().doubleValue(), detailViewModel.getLon().getValue().doubleValue()))
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
+
         observeViewModel();
     }
 

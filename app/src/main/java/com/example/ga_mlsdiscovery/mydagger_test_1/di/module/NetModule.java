@@ -2,6 +2,7 @@ package com.example.ga_mlsdiscovery.mydagger_test_1.di.module;
 
 import android.app.Application;
 
+import com.example.ga_mlsdiscovery.mydagger_test_1.repository.GetDataService;
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -56,6 +57,12 @@ public class NetModule {
                 .baseUrl(mBaseUrl)
                 .client(okHttpClient)
                 .build();
+    }
+
+    @Provides
+    @Singleton
+    GetDataService providesGetDataService(Retrofit retrofit) {
+        return retrofit.create(GetDataService.class);
     }
 }
 

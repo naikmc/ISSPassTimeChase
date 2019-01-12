@@ -7,6 +7,8 @@ import com.example.ga_mlsdiscovery.mydagger_test_1.di.module.MyActivityModule;
 import com.example.ga_mlsdiscovery.mydagger_test_1.di.module.NetModule;
 import com.example.ga_mlsdiscovery.mydagger_test_1.di.support.MyActScope;
 import com.example.ga_mlsdiscovery.mydagger_test_1.fragments.DetailFragment;
+import com.example.ga_mlsdiscovery.mydagger_test_1.fragments.ListFragment;
+import com.example.ga_mlsdiscovery.mydagger_test_1.fragments.ListViewModel;
 
 import dagger.Component;
 
@@ -18,4 +20,5 @@ public interface MyActivityComponent {
 
      void inject(DetailFragment detailFragment);
 
+     void inject(ListFragment listFragment);
 }

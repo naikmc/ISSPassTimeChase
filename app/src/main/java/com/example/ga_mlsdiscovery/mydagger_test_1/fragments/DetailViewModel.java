@@ -6,9 +6,9 @@ import android.arch.lifecycle.ViewModel;
 
 public class DetailViewModel extends ViewModel {
 
-    MutableLiveData<Double> lat = new MutableLiveData<>();
+    private MutableLiveData<Double> lat = new MutableLiveData<>();
 
-    MutableLiveData<Double> lon = new MutableLiveData<>();
+    private MutableLiveData<Double> lon = new MutableLiveData<>();
 
     public void setLat(double lat) {
 

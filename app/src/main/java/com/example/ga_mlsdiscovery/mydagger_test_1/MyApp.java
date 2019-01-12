@@ -29,7 +29,7 @@ public class MyApp extends Application {
             Timber.plant(new Timber.DebugTree());
         }
         myAppComponent = DaggerMyAppComponent.builder()
-                .netModule(new NetModule("http://www.jsonplaceholder.typicode.com/"))
+                .netModule(new NetModule("http://api.open-notify.org/"))
                 .myAppModule(new MyAppModule(this))
                 .build();
 

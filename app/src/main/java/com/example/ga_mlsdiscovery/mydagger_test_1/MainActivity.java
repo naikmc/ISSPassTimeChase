@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             getSupportFragmentManager()
                     .beginTransaction()
                     .add(R.id.fragment, new DetailFragment())
-                    .addToBackStack(null)
+                   // .addToBackStack(null)
                     .commit();
         }
 

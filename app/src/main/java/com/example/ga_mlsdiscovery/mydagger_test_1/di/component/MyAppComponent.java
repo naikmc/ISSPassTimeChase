@@ -7,6 +7,7 @@ import com.example.ga_mlsdiscovery.mydagger_test_1.MyApp;
 import com.example.ga_mlsdiscovery.mydagger_test_1.di.module.MyAppModule;
 import com.example.ga_mlsdiscovery.mydagger_test_1.di.module.NetModule;
 import com.example.ga_mlsdiscovery.mydagger_test_1.di.support.AppContext;
+import com.example.ga_mlsdiscovery.mydagger_test_1.repository.GetDataService;
 
 import javax.inject.Singleton;
 
@@ -19,8 +20,9 @@ public interface MyAppComponent {
 
     void inject(MyApp myApp);
 
-     Retrofit getRetrofit();
+    Retrofit getRetrofit();
 
+    GetDataService geGetDataService();
 
     @AppContext
     Context getContext();
